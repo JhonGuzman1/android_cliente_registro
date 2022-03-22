@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditarActivity"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorVerde"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edicion de Cliente"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlanco"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30dp"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:paddingVertical="30dp"
+            >
+
+            <EditText
+                android:id="@+id/et_nombre_editar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/ic_correo"
+                android:inputType="text"
+                android:drawablePadding="15dp"
+                android:imeOptions="actionNext"
+                android:drawableTint="@color/colorVerde"
+                android:backgroundTint="@color/colorVerde"
+                android:layout_marginVertical="10dp"
+                />
+            <EditText
+                android:id="@+id/et_apellido_editar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellido"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/ic_correo"
+                android:inputType="text"
+                android:drawablePadding="15dp"
+                android:imeOptions="actionNext"
+                android:drawableTint="@color/colorVerde"
+                android:backgroundTint="@color/colorVerde"
+                android:layout_marginVertical="10dp"
+                />
+            <EditText
+                android:id="@+id/et_edad_editar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Edad"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/ic_correo"
+                android:inputType="number"
+                android:drawablePadding="15dp"
+                android:imeOptions="actionNext"
+                android:drawableTint="@color/colorVerde"
+                android:backgroundTint="@color/colorVerde"
+                android:layout_marginVertical="10dp"
+                />
+
+            <EditText
+                android:id="@+id/et_documento_editar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Documento Identidad"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/ic_correo"
+                android:inputType="text"
+                android:drawablePadding="15dp"
+                android:imeOptions="actionNext"
+                android:drawableTint="@color/colorVerde"
+                android:backgroundTint="@color/colorVerde"
+                android:layout_marginVertical="10dp"
+                />
+
+            <EditText
+                android:id="@+id/et_nacionalidad_editar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nacionalidad"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/ic_correo"
+                android:inputType="text"
+                android:drawablePadding="15dp"
+                android:imeOptions="actionNext"
+                android:drawableTint="@color/colorVerde"
+                android:backgroundTint="@color/colorVerde"
+                android:layout_marginVertical="10dp"
+                />
+
+
+            <EditText
+                android:id="@+id/et_correo_editar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/ic_correo"
+                android:inputType="textEmailAddress"
+                android:drawablePadding="15dp"
+                android:imeOptions="actionNext"
+                android:drawableTint="@color/colorVerde"
+                android:backgroundTint="@color/colorVerde"
+                android:layout_marginVertical="10dp"
+                />
+
+            <EditText
+                android:id="@+id/et_contrasena_editar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/ic_contrasena"
+                android:inputType="textPassword"
+                android:drawablePadding="15dp"
+                android:imeOptions="actionSend"
+                android:backgroundTint="@color/colorVerde"
+                android:layout_marginVertical="10dp"
+                />
+            <EditText
+                android:id="@+id/et_confirmar_contrasena_editar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirmar Contraseña"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/ic_contrasena"
+                android:inputType="textPassword"
+                android:drawablePadding="15dp"
+                android:imeOptions="actionSend"
+                android:backgroundTint="@color/colorVerde"
+                android:layout_marginVertical="10dp"
+                />
+
+
+
+            <Button
+                android:id="@+id/bt_guardar_editar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_login"
+                android:backgroundTint="@color/colorVerde"
+                android:text="Guardar"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_marginVertical="10dp"
+                />
+
+            <Button
+                android:id="@+id/bt_eliminar_editar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_login"
+                android:backgroundTint="@color/colorRojo"
+                android:text="Eliminar"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_marginVertical="10dp"
+                />
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
